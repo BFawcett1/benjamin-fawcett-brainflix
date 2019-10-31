@@ -1,0 +1,54 @@
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 6%;
+}
+
+.hero__sub-container {
+  display: flex;
+}
+
+.hero__iconContainer {
+  display: flex;
+  margin-bottom: 48px;
+}
+
+.hero__likes {
+  display: flex;
+  justify-content: center;
+}
+
+.hero__number {
+  @include paragraph;
+  margin-right: 16px;
+}
+
+.hero__video {
+  display: flex;
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.hero__header {
+  display: flex;
+  margin-bottom: 16px;
+  @include header;
+}
+
+.hero__subheader {
+  display: flex;
+  @include subheader;
+  margin-bottom: 32px;
+  margin-right: 8px;
+}
+
+.hero__paragraph {
+  display: flex;
+  @include paragraph;
+  margin-right: 5%;
+}
+
+.hero__date {
+  @include label;
+  color: $label-text;
+}

@@ -1,0 +1,84 @@
+$brainflix-blue: #0095ff;
+$white-text: #fff;
+$label-text: #e1e1e1;
+
+@mixin header {
+  font-family: AvenirBold;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+@mixin subheader {
+  font-family: AvenirDemiBold;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+@mixin paragraph {
+  font-size: 13px;
+  line-height: 18px;
+  font-family: AvenirRegular;
+}
+
+@mixin label {
+  font-size: 12px;
+  line-height: 20px;
+  font-family: AvenirRegular;
+}
+
+.header__logo-container {
+  display: flex;
+  justify-content: center;
+  height: 48px;
+}
+
+.header__logo {
+  display: flex;
+}
+
+.header__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $brainflix-blue;
+  color: $white-text;
+  @include subheader;
+  height: 60px;
+  width: 70%;
+  border-radius: 4px;
+  margin-left: 5%;
+  margin-bottom: 16px;
+  margin-top: 8px;
+}
+
+.header__profile {
+  display: flex;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  margin-left: 5%;
+}
+
+.header__profile-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 16px;
+}
+
+.header__container {
+  display: flex;
+}
+
+.header__form-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.header__input {
+  display: flex;
+  height: 50px;
+  width: 89%;
+  margin-left: 6%;
+  border-radius: 4px;
+}

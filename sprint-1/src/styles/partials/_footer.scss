@@ -1,0 +1,41 @@
+.footer__video {
+  height: 70px;
+  width: 42%;
+  margin-left: 6%;
+  margin-bottom: 24px;
+}
+
+.footer__video__container {
+  display: flex;
+}
+
+.footer__video__container__bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__header {
+  display: flex;
+  flex-direction: wrap;
+  @include subheader;
+  margin-left: 6%;
+  margin-bottom: 16px;
+  margin-right: 6%;
+}
+
+.footer__label {
+  display: flex;
+  @include label;
+  color: #e1e1e1;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  margin-left: 6%;
+}
+
+.footer__paragraph {
+  @include paragraph;
+  margin-left: 6%;
+  margin-right: 6%;
+  display: flex;
+  flex-direction: wrap;
+}
