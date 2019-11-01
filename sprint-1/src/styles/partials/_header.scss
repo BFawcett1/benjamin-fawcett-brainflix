@@ -3,7 +3,7 @@ $white-text: #fff;
 $label-text: #afafaf;
 $icon-color: #e1e1e1;
 $black: #323232;
-
+//mixins for mobile fonts
 @mixin header {
   font-family: AvenirBold;
   font-size: 24px;
