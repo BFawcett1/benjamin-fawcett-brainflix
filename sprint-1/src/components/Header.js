@@ -13,7 +13,7 @@ export default function Header() {
         ></img>
       </div>
       <div className="header__form-container">
-        <form>
+        <form className="header__form">
           <label></label>
           <input className="header__input" type="text" value="Search"></input>
           <div className="header__bottom-container">

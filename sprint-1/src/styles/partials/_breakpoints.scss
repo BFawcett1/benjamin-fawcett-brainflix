@@ -29,17 +29,32 @@
     font-family: AvenirRegular;
   }
 
-  .header {
-    display: flex;
+  .header__form {
+    flex-direction: row;
+    align-items: center;
   }
+
+  .header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
   .header__form-container {
     flex-direction: row;
   }
   .header__logo-container {
     flex-direction: row;
+    margin-right: 16%;
+    margin-left: 5%;
   }
+
+  .header__logo {
+    margin-right: 16%;
+  }
+
   .header__bottom-container {
-    justify-content: flex-end;
+    flex-direction: row;
   }
 
   .hero__video-container {
@@ -92,6 +107,7 @@
   .comments__button {
     height: 60px;
     width: 22%;
+    @include tab-subheader;
   }
 
   .comments__form {
@@ -103,8 +119,9 @@
 
   .comments__text {
     width: 87%;
-    margin-left: 5%;
+    margin-left: 18%;
     margin-right: 5%;
+    @include tab-paragraph;
   }
 
   .comments__date {
@@ -118,10 +135,6 @@
     @include tab-subheader;
   }
 
-  .comments__text {
-    @include tab-paragraph;
-  }
-
   .footer__header {
     @include tab-subheader;
   }
@@ -129,22 +142,22 @@
   .footer__paragraph {
     @include tab-paragraph;
   }
-
-  .comments__button {
-    @include tab-subheader;
-  }
 }
 
 @media screen and (min-width: 1080px) {
   .comments__input {
-    width: 40%;
+    width: 436px;
   }
 
-  .comments__text {
-    width: 66%;
+  .comments__container {
+    width: 712px;
   }
 
   .hero__video {
     width: 70%;
+  }
+
+  .desktop-container {
+    display: flex;
   }
 }

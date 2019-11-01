@@ -28,6 +28,11 @@ $black: #323232;
   font-family: AvenirRegular;
 }
 
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
 .header__logo-container {
   display: flex;
   justify-content: center;
@@ -81,7 +86,7 @@ $black: #323232;
 
 .header__input {
   display: flex;
-  height: 50px;
+  height: 60px;
   width: 89%;
   margin-left: 6%;
   border-radius: 4px;
@@ -90,4 +95,9 @@ $black: #323232;
 .header__bottom-container {
   display: flex;
   flex-direction: row;
+}
+
+.header__form {
+  display: flex;
+  flex-direction: column;
 }

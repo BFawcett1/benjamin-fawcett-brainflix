@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <div className="hero">
       <div className="hero__video-container">
-        <video className="hero__video" src={Video}></video>
+        <video controls className="hero__video" src={Video}></video>
       </div>
       <div className="hero__container">
         <h1 className="hero__header">BMX Rampage: 2018 Highlights</h1>
