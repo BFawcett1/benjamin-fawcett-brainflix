@@ -4,7 +4,7 @@ import ProfileIcon from "../assets/Images/Mohan-muruge.jpg";
 
 export default function Header() {
   return (
-    <header>
+    <header className="header">
       <div className="header__logo-container">
         <img
           className="header__logo"
@@ -16,15 +16,11 @@ export default function Header() {
         <form>
           <label></label>
           <input className="header__input" type="text" value="Search"></input>
-          <button className="header__button">+ Upload</button>
+          <div className="header__bottom-container">
+            <button className="header__button">+ Upload</button>
+            <img className="header__profile" src={ProfileIcon} alt="profile" />
+          </div>
         </form>
-        <div className="header__profile-container">
-          <img
-            className="header__profile"
-            src={ProfileIcon}
-            alt="profile image"
-          ></img>
-        </div>
       </div>
     </header>
   );

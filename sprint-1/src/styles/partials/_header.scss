@@ -1,6 +1,8 @@
 $brainflix-blue: #0095ff;
 $white-text: #fff;
-$label-text: #e1e1e1;
+$label-text: #afafaf;
+$icon-color: #e1e1e1;
+$black: #323232;
 
 @mixin header {
   font-family: AvenirBold;
@@ -42,7 +44,7 @@ $label-text: #e1e1e1;
   align-items: center;
   background-color: $brainflix-blue;
   color: $white-text;
-  @include subheader;
+  @include header;
   height: 60px;
   width: 70%;
   border-radius: 4px;
@@ -53,9 +55,11 @@ $label-text: #e1e1e1;
 
 .header__profile {
   display: flex;
+  align-self: center;
   border-radius: 50%;
   height: 60px;
   width: 60px;
+  margin-right: 5%;
   margin-left: 5%;
 }
 
@@ -81,4 +85,9 @@ $label-text: #e1e1e1;
   width: 89%;
   margin-left: 6%;
   border-radius: 4px;
+}
+
+.header__bottom-container {
+  display: flex;
+  flex-direction: row;
 }

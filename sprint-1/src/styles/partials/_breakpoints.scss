@@ -1,0 +1,150 @@
+@media screen and (min-width: 720px) {
+  @mixin hero-header {
+    font-family: AvenirBold;
+    font-size: 60px;
+    line-height: 68px;
+  }
+
+  @mixin tab-header {
+    font-family: AvenirBold;
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  @mixin tab-subheader {
+    font-family: AvenirDemiBold;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @mixin tab-paragraph {
+    font-size: 14px;
+    line-height: 22px;
+    font-family: AvenirRegular;
+  }
+
+  @mixin lists {
+    font-size: 14px;
+    line-height: 20px;
+    font-family: AvenirRegular;
+  }
+
+  .header {
+    display: flex;
+  }
+  .header__form-container {
+    flex-direction: row;
+  }
+  .header__logo-container {
+    flex-direction: row;
+  }
+  .header__bottom-container {
+    justify-content: flex-end;
+  }
+
+  .hero__video-container {
+    display: flex;
+    justify-content: center;
+    background-color: $black;
+  }
+
+  .hero__video {
+    width: 97%;
+    margin-bottom: 0;
+  }
+
+  .hero__header {
+    @include hero-header;
+  }
+
+  .hero__subheader {
+    @include tab-subheader;
+  }
+
+  .hero__paragraph {
+    display: flex;
+    @include tab-paragraph;
+    margin-right: 5%;
+  }
+
+  .hero__container {
+    margin-top: 48px;
+  }
+
+  .hero__break-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .hero__number {
+    margin-right: 24px;
+  }
+  .comments__input {
+    height: 60px;
+    width: 61%;
+  }
+
+  .comments__label {
+    margin-left: 17%;
+  }
+
+  .comments__button {
+    height: 60px;
+    width: 22%;
+  }
+
+  .comments__form {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    margin-bottom: 24px;
+  }
+
+  .comments__text {
+    width: 87%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .comments__date {
+    margin-left: 8px;
+  }
+
+  .comments__header {
+    @include tab-subheader;
+  }
+  .comments__subheader {
+    @include tab-subheader;
+  }
+
+  .comments__text {
+    @include tab-paragraph;
+  }
+
+  .footer__header {
+    @include tab-subheader;
+  }
+
+  .footer__paragraph {
+    @include tab-paragraph;
+  }
+
+  .comments__button {
+    @include tab-subheader;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .comments__input {
+    width: 40%;
+  }
+
+  .comments__text {
+    width: 66%;
+  }
+
+  .hero__video {
+    width: 70%;
+  }
+}

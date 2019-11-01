@@ -1,15 +1,16 @@
-.footer__video {
+.footer__img {
+  display: flex;
+  width: 120px;
   height: 70px;
-  width: 42%;
   margin-left: 6%;
   margin-bottom: 24px;
 }
 
-.footer__video__container {
+.footer__container {
   display: flex;
 }
 
-.footer__video__container__bottom {
+.footer__container__bottom {
   display: flex;
   flex-direction: column;
 }
@@ -26,7 +27,7 @@
 .footer__label {
   display: flex;
   @include label;
-  color: #e1e1e1;
+  color: $label-text;
   margin-bottom: 40px;
   margin-top: 40px;
   margin-left: 6%;
