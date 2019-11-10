@@ -1,0 +1,82 @@
+.upload-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.upload-page__header {
+    margin-top: 24px;
+    margin-bottom: 32px;
+    margin-left: 5%;
+    @include header;
+}
+
+.upload-page__video-label{
+    margin-left: 5%;
+    margin-bottom: 5px;
+    @include label;
+    color: $label-text;
+}
+
+.upload-page__img {
+  display: flex;
+  justify-self: center;
+  width: 288px;
+  height: 153px;
+  margin-bottom: 32px;
+}
+
+.upload-page__form{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.upload-page__bottom-form{
+    display: flex;
+    justify-content: center;
+    height: 143px;
+}
+
+.upload-page__subheader{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+    color: $brainflix-blue;
+    @include subheader;
+}
+
+.upload-page__img-container{
+    display: flex;
+    justify-content: center;
+}
+
+.upload-page__input{
+    width: 90%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    border-color: $label-text;
+    border-radius: 4px;
+}
+
+.upload-page__input-bottom{
+    display: flex;
+    justify-content: center;
+    height: 143px;
+    width: 90%;
+    border-radius: 4px;
+    border-color: $label-text;
+}
+
+.upload-page__button{
+    display: flex;
+    width: 90%;
+    height: 60px;
+    margin-left: 5%;
+    margin-top: 32px;
+    margin-bottom: 24px;
+    justify-content: center;
+    background-color: $brainflix-blue;
+    border-radius: 4px;
+    color: $white-text;
+}
