@@ -1,58 +1,58 @@
-.hero__container {
+.video-desc__container {
   display: flex;
   flex-direction: column;
   margin-left: 6%;
 }
 
-.hero__sub-container {
+.video-desc__sub-container {
   display: flex;
 }
 
-.hero__iconContainer {
+.video-desc__iconContainer {
   display: flex;
   margin-bottom: 48px;
 }
 
-.hero__likes {
+.video-desc__likes {
   display: flex;
   justify-content: center;
 }
 
-.hero__number {
+.video-desc__number {
   @include paragraph;
   margin-right: 16px;
 }
 
-.hero__video {
+.video-desc__video {
   display: flex;
   width: 100%;
   margin-bottom: 32px;
 }
 
-.hero__header {
+.video-desc__header {
   display: flex;
   margin-bottom: 16px;
   @include header;
 }
 
-.hero__subheader {
+.video-desc__subheader {
   display: flex;
   @include subheader;
   margin-bottom: 32px;
   margin-right: 8px;
 }
 
-.hero__paragraph {
+.video-desc__paragraph {
   display: flex;
   @include paragraph;
   margin-right: 5%;
 }
 
-.hero__date {
+.video-desc__date {
   @include label;
   color: $label-text;
 }
 
-.hero__image {
+.video-desc__image {
   margin-right: 8px;
 }

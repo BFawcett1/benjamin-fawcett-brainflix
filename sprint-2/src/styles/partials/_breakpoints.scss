@@ -1,6 +1,6 @@
 @media screen and (min-width: 720px) {
   //new mixins for tablet and desktop fonts
-  @mixin hero-header {
+  @mixin video-desc-header {
     font-family: AvenirBold;
     font-size: 60px;
     line-height: 68px;
@@ -30,21 +30,25 @@
     font-family: AvenirRegular;
   }
 
-  .upload-page__img-container{
+  .upload-page__img-container {
     justify-content: flex-start;
     margin-left: 5%;
   }
 
-  .upload-page__img{
+  .upload-page__img {
     width: 344px;
     height: 183px;
   }
 
-  .upload-page__header{
-    @include hero-header;
+  .upload-page__button{
+    width: 160px;
   }
 
-  .header__input{
+  .upload-page__header {
+    @include video-desc-header;
+  }
+
+  .header__input {
     width: 300px;
   }
 
@@ -57,7 +61,7 @@
     margin-top: 8px;
   }
 
-  .header__form{
+  .header__form {
     display: flex;
     width: 100%;
     justify-content: flex-end;
@@ -86,42 +90,42 @@
     width: 38%;
   }
 
-  .hero__video-container {
+  .video-desc__video-container {
     display: flex;
     justify-content: center;
     background-color: $black;
   }
 
-  .hero__video {
+  .video-desc__video {
     width: 97%;
     margin-bottom: 0;
   }
 
-  .hero__header {
-    @include hero-header;
+  .video-desc__header {
+    @include video-desc-header;
   }
 
-  .hero__subheader {
+  .video-desc__subheader {
     @include tab-subheader;
   }
 
-  .hero__paragraph {
+  .video-desc__paragraph {
     display: flex;
     @include tab-paragraph;
     margin-right: 5%;
   }
 
-  .hero__container {
+  .video-desc__container {
     margin-top: 48px;
   }
 
-  .hero__break-container {
+  .video-desc__break-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
 
-  .hero__number {
+  .video-desc__number {
     margin-right: 24px;
   }
   .comments__input {
@@ -153,7 +157,7 @@
     @include tab-paragraph;
   }
 
-  .comments__text-container{
+  .comments__text-container {
     width: 90%;
     margin-left: 0%;
   }
@@ -169,16 +173,75 @@
     @include tab-subheader;
   }
 
-  .footer__header {
+  .list-videos__header {
     @include tab-subheader;
   }
 
-  .footer__paragraph {
+  .list-videos__paragraph {
     @include tab-paragraph;
+  }
+
+  .upload-page__container{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 40px;
+  }
+
+   .upload-page__button{
+    margin-right: 5%;
+    margin-left: 48px;
+  }
+
+  
+  .upload-page__subheader{
+    align-self: center;
+    margin: 0;
   }
 }
 
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 1440px) {
+  .upload-page__video-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 9%;
+  }
+
+  .upload-page__img-container{
+    margin-left: 0;
+  }
+
+  .upload-page__mid-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 2%;
+  }
+
+  .upload-page__desk-container{
+    display: flex;
+  }
+
+  .upload-page__input{
+    width: 100%;
+    margin-right: 5%;
+  }
+
+  .upload-page__input-bottom{
+    width: 100%;
+    margin-right: 5%;
+    height: 94px;
+  }
+
+  .upload-page__video-label{
+    margin-left: 0%;
+  }
+
+  .upload-page__header{
+    margin-left: 9%;
+  }
+  
   .comments__input {
     width: 436px;
   }
@@ -187,22 +250,19 @@
     width: 712px;
   }
 
-  .hero__video {
+  .video-desc__video {
     width: 70%;
   }
 
   .desktop-container {
     display: flex;
   }
-  .header{
+
+  .header {
     margin-top: 16px;
   }
 
-  .header__button{
+  .header__button {
     width: 150px;
-  }
-
-  .upload-page{
-    flex-direction: row;
   }
 }

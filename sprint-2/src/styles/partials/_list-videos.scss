@@ -1,4 +1,4 @@
-.footer__img {
+.list-videos__img {
   display: flex;
   width: 120px;
   height: 70px;
@@ -6,16 +6,16 @@
   margin-bottom: 24px;
 }
 
-.footer__container {
+.list-videos__container {
   display: flex;
 }
 
-.footer__container__bottom {
+.list-videos__container__bottom {
   display: flex;
   flex-direction: column;
 }
 
-.footer__header {
+.list-videos__header {
   display: flex;
   flex-direction: wrap;
   @include subheader;
@@ -26,7 +26,7 @@
   color: $black;
 }
 
-.footer__label {
+.list-videos__label {
   display: flex;
   @include label;
   color: $label-text;
@@ -35,7 +35,7 @@
   margin-left: 6%;
 }
 
-.footer__paragraph {
+.list-videos__paragraph {
   @include paragraph;
   margin-left: 6%;
   margin-right: 6%;

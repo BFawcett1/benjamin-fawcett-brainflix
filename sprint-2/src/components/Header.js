@@ -17,7 +17,7 @@ export default function Header() {
         </div>
         <form className="header__form">
           <label></label>
-        <input className="header__input" type="text" value= "  Search"></input>
+        <input className="header__input" type="text" placeholder= "              Search"></input>
           <div className="header__button-container">
             <Link to={`/UploadPage`}>
               <button className="header__button">+  UPLOAD</button>

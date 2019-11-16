@@ -7,20 +7,20 @@ export default function Footer(props) {
     return (
       <Link
       to={`/nextVideo/${video.id}`}
-      className="footer__container"
+      className="list-videos__container"
       key={video.id}>
-      <div className="footer__container">
-        <img className="footer__img" src={video.image} alt="video" />
-        <div className="footer__container__bottom">
-          <h2 className="footer__header">{video.title}</h2>
-          <h2 className="footer__paragraph">{video.channel}</h2>
+      <div className="list-videos__container">
+        <img className="list-videos__img" src={video.image} alt="video" />
+        <div className="list-videos__container__bottom">
+          <h2 className="list-videos__header">{video.title}</h2>
+          <h2 className="list-videos__paragraph">{video.channel}</h2>
         </div>
         </div></Link>
     );
   })
   return (
     <div>
-      <h5 className="footer__label">NEXT VIDEO</h5>
+      <h5 className="list-videos__label">NEXT VIDEO</h5>
       <div>{videoList}</div>
     </div>
   );

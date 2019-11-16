@@ -1,5 +1,5 @@
 import Header from "./components/Header";
-import Hero from "./components/VideoDesc";
+import VideoDesc from "./components/VideoDesc";
 // import Footer from "./components/Footer";
 import UploadPage from "./components/UploadPage";
 import MainContent from "./components/mainContent";
@@ -10,7 +10,7 @@ export default function App() {
   return (
     <div>
       <Header />
-      <Hero />
+      <VideoDesc />
       <Switch>
         {/* <Redirect from="/" to="/nextvideo/1af0jruup5gu" component={MainContent}/> */}
         <Route exact path="/" component={MainContent} />
