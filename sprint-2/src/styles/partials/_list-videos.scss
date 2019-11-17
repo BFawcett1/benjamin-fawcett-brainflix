@@ -1,0 +1,46 @@
+.list-videos__img {
+  display: flex;
+  width: 120px;
+  height: 70px;
+  margin-left: 6%;
+  margin-bottom: 24px;
+}
+
+.list-videos__container {
+  display: flex;
+}
+
+.list-videos__container__bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+.list-videos__header {
+  display: flex;
+  flex-direction: wrap;
+  @include subheader;
+  margin-left: 6%;
+  margin-bottom: 16px;
+  margin-right: 6%;
+  text-decoration: none;
+  color: $black;
+}
+
+.list-videos__label {
+  display: flex;
+  @include label;
+  color: $label-text;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  margin-left: 6%;
+}
+
+.list-videos__paragraph {
+  @include paragraph;
+  margin-left: 6%;
+  margin-right: 6%;
+  display: flex;
+  flex-direction: wrap;
+  text-decoration: none;
+  color: $black;
+}

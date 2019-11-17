@@ -1,0 +1,110 @@
+.comments {
+  display: flex;
+  flex-direction: column;
+}
+
+.comments__input {
+  display: flex;
+  width: 94%;
+  margin-right: 6%;
+  height: 90px;
+  border-radius: 4px;
+  border-color: $brainflix-blue;
+  border-style: solid;
+}
+
+.comments__container-bottom {
+  display: flex;
+}
+
+.comments__container {
+  display: flex;
+  flex-direction: column;
+  border-top-style: solid;
+  border-color: $icon-color;
+}
+
+.comments__top-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.comments__bottom-container {
+  display: flex;
+  width: 100%;
+  align-items: flex-end;
+  margin-left: 6%;
+  margin-bottom: 16px;
+}
+
+.comments__blankIcon {
+  display: flex;
+  height: 60px;
+  width: 60px;
+  background-color: $icon-color;
+  border-radius: 50%;
+  margin-left: 6%;
+  margin-top: 16px;
+}
+
+.comments__header {
+  display: flex;
+  @include subheader;
+  margin-left: 6%;
+  margin-top: 40px;
+  margin-bottom: 32px;
+  justify-content: space-between;
+}
+
+.comments__subheader {
+  @include subheader;
+}
+
+.comments__text {
+  display: flex;
+  @include paragraph;
+  margin-left: 24%;
+  margin-right: 6%;
+  margin-bottom: 30px;
+}
+
+.comments__date {
+  @include label;
+  color: $label-text;
+  margin-left: auto;
+  margin-right: 6%;
+}
+
+.comments__label {
+  display: flex;
+  @include label;
+  color: $label-text;
+  margin-left: 25%;
+}
+
+.comments__button {
+  @include subheader;
+  display: flex;
+  color: $white-text;
+  background-color: $brainflix-blue;
+  justify-content: center;
+  height: 50px;
+  width: 94%;
+  margin-right: 6%;
+  border-radius: 4px;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+.comments__profile {
+  display: flex;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.comments__form {
+  width: 100%;
+}
