@@ -40,6 +40,13 @@
     height: 183px;
   }
 
+<<<<<<< HEAD
+=======
+  .upload-page__button{
+    width: 160px;
+  }
+
+>>>>>>> d532efcaf8c32aa9ebbfc5ca55700cabc70affc8
   .upload-page__header {
     @include video-desc-header;
   }
@@ -177,12 +184,17 @@
     @include tab-paragraph;
   }
 
+<<<<<<< HEAD
   .upload-page__container {
+=======
+  .upload-page__container{
+>>>>>>> d532efcaf8c32aa9ebbfc5ca55700cabc70affc8
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     justify-content: flex-start;
     margin-top: 40px;
+<<<<<<< HEAD
     margin-bottom: 24px;
   }
 
@@ -195,12 +207,24 @@
   }
 
   .upload-page__subheader {
+=======
+  }
+
+   .upload-page__button{
+    margin-right: 5%;
+    margin-left: 48px;
+  }
+
+  
+  .upload-page__subheader{
+>>>>>>> d532efcaf8c32aa9ebbfc5ca55700cabc70affc8
     align-self: center;
     margin: 0;
   }
 }
 
 @media screen and (min-width: 1440px) {
+<<<<<<< HEAD
   .upload-page__video-container {
     display: flex;
     flex-direction: column;
@@ -213,10 +237,24 @@
   }
 
   .upload-page__mid-container {
+=======
+  .upload-page__video-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 9%;
+  }
+
+  .upload-page__img-container{
+    margin-left: 0;
+  }
+
+  .upload-page__mid-container{
+>>>>>>> d532efcaf8c32aa9ebbfc5ca55700cabc70affc8
     display: flex;
     flex-direction: column;
     width: 100%;
     margin-left: 2%;
+<<<<<<< HEAD
     margin-top: 40px;
   }
 
@@ -228,16 +266,30 @@
   }
 
   .upload-page__input {
+=======
+  }
+
+  .upload-page__desk-container{
+    display: flex;
+  }
+
+  .upload-page__input{
+>>>>>>> d532efcaf8c32aa9ebbfc5ca55700cabc70affc8
     width: 100%;
     margin-right: 5%;
   }
 
+<<<<<<< HEAD
   .upload-page__input-bottom {
+=======
+  .upload-page__input-bottom{
+>>>>>>> d532efcaf8c32aa9ebbfc5ca55700cabc70affc8
     width: 100%;
     margin-right: 5%;
     height: 94px;
   }
 
+<<<<<<< HEAD
   .upload-page__video-label {
     margin-left: 0%;
   }
@@ -246,6 +298,16 @@
     margin-left: 9%;
   }
 
+=======
+  .upload-page__video-label{
+    margin-left: 0%;
+  }
+
+  .upload-page__header{
+    margin-left: 9%;
+  }
+  
+>>>>>>> d532efcaf8c32aa9ebbfc5ca55700cabc70affc8
   .comments__input {
     width: 436px;
   }

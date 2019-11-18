@@ -561,6 +561,12 @@ a {
     width: 344px;
     height: 183px;
   }
+<<<<<<< HEAD
+=======
+  .upload-page__button {
+    width: 160px;
+  }
+>>>>>>> d532efcaf8c32aa9ebbfc5ca55700cabc70affc8
   .upload-page__header {
     font-family: AvenirBold;
     font-size: 60px;
@@ -752,14 +758,20 @@ a {
         -ms-flex-pack: start;
             justify-content: flex-start;
     margin-top: 40px;
+<<<<<<< HEAD
     margin-bottom: 24px;
+=======
+>>>>>>> d532efcaf8c32aa9ebbfc5ca55700cabc70affc8
   }
   .upload-page__button {
     margin-right: 5%;
     margin-left: 48px;
+<<<<<<< HEAD
     width: 160px;
     margin-bottom: 0px;
     margin-top: 0px;
+=======
+>>>>>>> d532efcaf8c32aa9ebbfc5ca55700cabc70affc8
   }
   .upload-page__subheader {
     -ms-flex-item-align: center;
@@ -779,7 +791,10 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
     margin-left: 9%;
+<<<<<<< HEAD
     margin-top: 40px;
+=======
+>>>>>>> d532efcaf8c32aa9ebbfc5ca55700cabc70affc8
   }
   .upload-page__img-container {
     margin-left: 0;
@@ -794,15 +809,21 @@ a {
             flex-direction: column;
     width: 100%;
     margin-left: 2%;
+<<<<<<< HEAD
     margin-top: 40px;
+=======
+>>>>>>> d532efcaf8c32aa9ebbfc5ca55700cabc70affc8
   }
   .upload-page__desk-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+<<<<<<< HEAD
     border-top-style: solid;
     border-bottom-style: solid;
     border-color: #e1e1e1;
+=======
+>>>>>>> d532efcaf8c32aa9ebbfc5ca55700cabc70affc8
   }
   .upload-page__input {
     width: 100%;
