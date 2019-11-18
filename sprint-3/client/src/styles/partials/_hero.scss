@@ -1,0 +1,58 @@
+.video-desc__container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 6%;
+}
+
+.video-desc__sub-container {
+  display: flex;
+}
+
+.video-desc__iconContainer {
+  display: flex;
+  margin-bottom: 48px;
+}
+
+.video-desc__likes {
+  display: flex;
+  justify-content: center;
+}
+
+.video-desc__number {
+  @include paragraph;
+  margin-right: 16px;
+}
+
+.video-desc__video {
+  display: flex;
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.video-desc__header {
+  display: flex;
+  margin-bottom: 16px;
+  @include header;
+}
+
+.video-desc__subheader {
+  display: flex;
+  @include subheader;
+  margin-bottom: 32px;
+  margin-right: 8px;
+}
+
+.video-desc__paragraph {
+  display: flex;
+  @include paragraph;
+  margin-right: 5%;
+}
+
+.video-desc__date {
+  @include label;
+  color: $label-text;
+}
+
+.video-desc__image {
+  margin-right: 8px;
+}
