@@ -1,21 +1,19 @@
 {
-  "name": "client",
+  "name": "client2",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "concurrently": "^5.0.0",
-    "cors": "^2.8.5",
-    "express": "^4.17.1",
-    "nodemon": "^1.19.4",
-    "react": "^16.11.0",
-    "react-dom": "^16.11.0",
+    "axios": "^0.19.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-router-dom": "^5.1.2",
     "react-scripts": "3.2.0"
   },
   "scripts": {
-    "start": "node index",
-    "client": "npm start --pref ix ../client",
-    "server": "nodemon index.js",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
