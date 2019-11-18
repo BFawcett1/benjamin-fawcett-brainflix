@@ -561,9 +561,6 @@ a {
     width: 344px;
     height: 183px;
   }
-  .upload-page__button {
-    width: 160px;
-  }
   .upload-page__header {
     font-family: AvenirBold;
     font-size: 60px;
@@ -755,10 +752,14 @@ a {
         -ms-flex-pack: start;
             justify-content: flex-start;
     margin-top: 40px;
+    margin-bottom: 24px;
   }
   .upload-page__button {
     margin-right: 5%;
     margin-left: 48px;
+    width: 160px;
+    margin-bottom: 0px;
+    margin-top: 0px;
   }
   .upload-page__subheader {
     -ms-flex-item-align: center;
@@ -778,6 +779,7 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
     margin-left: 9%;
+    margin-top: 40px;
   }
   .upload-page__img-container {
     margin-left: 0;
@@ -792,11 +794,15 @@ a {
             flex-direction: column;
     width: 100%;
     margin-left: 2%;
+    margin-top: 40px;
   }
   .upload-page__desk-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-color: #e1e1e1;
   }
   .upload-page__input {
     width: 100%;

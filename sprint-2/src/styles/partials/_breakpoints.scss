@@ -40,10 +40,6 @@
     height: 183px;
   }
 
-  .upload-page__button{
-    width: 160px;
-  }
-
   .upload-page__header {
     @include video-desc-header;
   }
@@ -181,67 +177,75 @@
     @include tab-paragraph;
   }
 
-  .upload-page__container{
+  .upload-page__container {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     justify-content: flex-start;
     margin-top: 40px;
+    margin-bottom: 24px;
   }
 
-   .upload-page__button{
+  .upload-page__button {
     margin-right: 5%;
     margin-left: 48px;
+    width: 160px;
+    margin-bottom: 0px;
+    margin-top: 0px;
   }
 
-  
-  .upload-page__subheader{
+  .upload-page__subheader {
     align-self: center;
     margin: 0;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .upload-page__video-container{
+  .upload-page__video-container {
     display: flex;
     flex-direction: column;
     margin-left: 9%;
+    margin-top: 40px;
   }
 
-  .upload-page__img-container{
+  .upload-page__img-container {
     margin-left: 0;
   }
 
-  .upload-page__mid-container{
+  .upload-page__mid-container {
     display: flex;
     flex-direction: column;
     width: 100%;
     margin-left: 2%;
+    margin-top: 40px;
   }
 
-  .upload-page__desk-container{
+  .upload-page__desk-container {
     display: flex;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-color: $icon-color;
   }
 
-  .upload-page__input{
+  .upload-page__input {
     width: 100%;
     margin-right: 5%;
   }
 
-  .upload-page__input-bottom{
+  .upload-page__input-bottom {
     width: 100%;
     margin-right: 5%;
     height: 94px;
   }
 
-  .upload-page__video-label{
+  .upload-page__video-label {
     margin-left: 0%;
   }
 
-  .upload-page__header{
+  .upload-page__header {
     margin-left: 9%;
   }
-  
+
   .comments__input {
     width: 436px;
   }
