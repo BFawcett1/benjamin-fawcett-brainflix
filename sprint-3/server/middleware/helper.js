@@ -9,10 +9,9 @@ function writeJSONFile(filename, content) {
   });
   console.log(`changes saved to file ${filename}....`);
 }
-const getNewId = () => {
-  return uuid();
-};
+// const getNewId = () => {
+//   return uuid();
+// };
 module.exports = {
-  writeJSONFile,
-  getNewId
+  writeJSONFile
 };

@@ -17,35 +17,28 @@ export default class MainContent extends Component {
   }
   componentDidMount() {
     axios.get(`http://localhost:5000/videos`).then(response => {
+      console.log(response);
       this.setState({
         sideVideos: response.data
       });
 
-      axios
-        .get(
-          `https://project-2-api.herokuapp.com/videos/1af0jruup5gu?api_key=10934c5d-effc-4243-b61d-ddf2f239d3e7`
-        )
-        .then(res => {
-          this.setState({
-            mainVideo: res.data
-          });
+      axios.get(`http://localhost:5000/videos/1af0jruup5gu`).then(res => {
+        this.setState({
+          mainVideo: res.data[0]
         });
+      });
     });
   }
   componentDidUpdate(prevProps, prevState) {
     // console.log(prevProps.match.params.id);
     let id = this.props.match.params.id;
     if (this.props.match.params.id !== prevProps.match.params.id) {
-      axios
-        .get(
-          `https://project-2-api.herokuapp.com/videos/${id}?api_key=10934c5d-effc-4243-b61d-ddf2f239d3e7`
-        )
-        .then(res => {
-          this.setState({
-            mainVideo: res.data,
-            videoId: res.data.id
-          });
+      axios.get(`http://localhost:5000/videos/${id}`).then(res => {
+        this.setState({
+          mainVideo: res.data[0],
+          videoId: res.data.id
         });
+      });
     }
   }
   render() {

@@ -7,12 +7,18 @@ export default function Comments(props) {
   const commentList = 
     props.commentProp.mainVideo.comments &&
     props.commentProp.mainVideo.comments.map(comment => {
+     let newDate = new Date(comment.timestamp);
+     let year = newDate.getFullYear();
+     let month = newDate.getMonth() + 1;
+     let day = newDate.getDate();
+     let fullDate = `${month}/${day}/${year}`;
+
       return (
         <div className="comments">
             <div className="comments__top-container">
               <div className="comments__blankIcon"></div>
               <h2 className="comments__subheader">{comment.name}</h2>
-              <h5 className="comments__date">{comment.timestamp}</h5>
+              <h5 className="comments__date">{fullDate}</h5>
             </div>
         <div className="comments__text-container">
           <h2 className="comments__text">{comment.comment}</h2>

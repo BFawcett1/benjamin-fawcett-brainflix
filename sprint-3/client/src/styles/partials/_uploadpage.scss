@@ -11,6 +11,7 @@
 }
 
 .upload-page__video-label{
+    display: flex;
     margin-left: 5%;
     margin-bottom: 5px;
     @include label;
@@ -80,4 +81,9 @@
     background-color: $brainflix-blue;
     border-radius: 4px;
     color: $white-text;
+}
+
+.upload-page__mid-container{
+    display: flex;
+    flex-direction: column;
 }
