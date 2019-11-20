@@ -277,6 +277,8 @@ a {
       -ms-flex-direction: row;
           flex-direction: row;
   margin-right: 5%;
+  border-top-style: solid;
+  border-color: #e1e1e1;
 }
 
 .comments__top-container {
@@ -304,7 +306,7 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-left: 5%;
+  margin-left: 8%;
 }
 
 .comments__input {
@@ -334,7 +336,7 @@ a {
   background-color: #e1e1e1;
   border-radius: 50%;
   margin-top: 16px;
-  margin-left: 10%;
+  margin-left: 25%;
 }
 
 .comments__header {
@@ -762,7 +764,6 @@ a {
   }
   .comments__text {
     width: 87%;
-    margin-left: 18%;
     margin-right: 5%;
     font-size: 14px;
     line-height: 22px;
@@ -816,8 +817,6 @@ a {
         -ms-flex-pack: start;
             justify-content: flex-start;
     margin-bottom: 24px;
-    border-top-style: solid;
-    border-color: #e1e1e1;
     height: 140px;
     width: 90%;
   }
@@ -842,6 +841,10 @@ a {
   }
   .upload-page__input-bottom {
     margin-bottom: 40px;
+  }
+  .comments-mid {
+    margin-right: 0;
+    margin-left: 3%;
   }
 }
 
@@ -887,20 +890,24 @@ a {
     width: 90%;
     margin-left: 24px;
     margin-right: 6%;
+    border-bottom-style: solid;
+    border-color: #e1e1e1;
+    padding-bottom: 40px;
   }
   .upload-page__form {
     width: 100%;
   }
   .upload-page__container {
-    margin-right: 5%;
+    margin-right: 13%;
     margin-top: 40px;
     width: 100%;
   }
+  .upload-page {
+    margin-left: 7%;
+    margin-right: 7%;
+  }
   .comments__input {
     width: 436px;
-  }
-  .comments__container {
-    width: 712px;
   }
   .video-desc__video {
     width: 70%;
@@ -915,6 +922,9 @@ a {
   }
   .header__button {
     width: 150px;
+  }
+  .list-videos__container {
+    margin-right: 5%;
   }
 }
 /*# sourceMappingURL=main.css.map */

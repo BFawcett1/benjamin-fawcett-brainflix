@@ -150,7 +150,6 @@
 
   .comments__text {
     width: 87%;
-    margin-left: 18%;
     margin-right: 5%;
     @include tab-paragraph;
   }
@@ -193,8 +192,6 @@
     align-items: center;
     justify-content: flex-start;
     margin-bottom: 24px;
-    border-top-style: solid;
-    border-color: $icon-color;
     height: 140px;
     width: 90%;
   }
@@ -221,6 +218,11 @@
 
   .upload-page__input-bottom {
     margin-bottom: 40px;
+  }
+
+  .comments-mid{
+    margin-right: 0;
+    margin-left: 3%;
   }
   
 }
@@ -263,6 +265,9 @@
     width: 90%;
     margin-left: 24px;
     margin-right: 6%;
+    border-bottom-style: solid;
+    border-color: $icon-color;
+    padding-bottom: 40px;
   }
 
   .upload-page__form {
@@ -270,17 +275,18 @@
   }
 
   .upload-page__container{
-    margin-right: 5%;
+    margin-right: 13%;
     margin-top: 40px;
     width: 100%;
   }
 
-  .comments__input {
-    width: 436px;
+  .upload-page{
+    margin-left: 7%;
+    margin-right: 7%;
   }
 
-  .comments__container {
-    width: 712px;
+  .comments__input {
+    width: 436px;
   }
 
   .video-desc__video {
@@ -297,5 +303,9 @@
 
   .header__button {
     width: 150px;
+  }
+
+  .list-videos__container{
+    margin-right: 5%;
   }
 }

@@ -2,6 +2,8 @@
   display: flex;
   flex-direction: row;
   margin-right: 5%;
+  border-top-style: solid;
+  border-color: $icon-color; 
 }
 
 .comments__top-container{
@@ -19,7 +21,7 @@
 .comments__mid-container{
   display: flex;
   flex-direction: column;
-  margin-left: 5%;
+  margin-left: 8%;
 }
 
 .comments__input {
@@ -43,7 +45,7 @@
   background-color: $icon-color;
   border-radius: 50%;
   margin-top: 16px;
-  margin-left: 10%;
+  margin-left: 25%;
 }
 
 .comments__header {
