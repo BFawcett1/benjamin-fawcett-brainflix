@@ -1,18 +1,25 @@
-
-
-.comments__top-container{
+.comments-mid{
   display: flex;
-  width: 90%;
-  margin-left: 5%;
-  border-top-style: solid;
-  border-top-color: $icon-color;
+  flex-direction: row;
+  margin-right: 5%;
 }
 
-.comments__text-container{
-  display: flex;
-  width: 70%;
-  margin-left:25%;
+.comments__top-container{
+  width: 60px;
+  margin-left: 5%;
   margin-right: 5%;
+}
+
+.comments__head-date-container{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 16px;
+}
+
+.comments__mid-container{
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
 }
 
 .comments__input {
@@ -36,6 +43,7 @@
   background-color: $icon-color;
   border-radius: 50%;
   margin-top: 16px;
+  margin-left: 10%;
 }
 
 .comments__header {
@@ -48,8 +56,8 @@
 }
 
 .comments__subheader {
+  display: flex;
   @include subheader;
-  margin-left: 5%;
   margin-top: 16px;
 }
 
@@ -60,6 +68,7 @@
 }
 
 .comments__date {
+  display: flex;
   @include label;
   color: $label-text;
   margin-left: auto;

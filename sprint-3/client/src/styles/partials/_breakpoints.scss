@@ -42,10 +42,12 @@
 
   .upload-page__header {
     @include video-desc-header;
+    margin-left: 0;
   }
 
   .header__input {
-    width: 300px;
+    width: 252px;
+    margin-right: 24px;
   }
 
   .header {
@@ -54,7 +56,7 @@
     align-items: center;
     justify-content: flex-end;
     margin-bottom: 16px;
-    margin-top: 8px;
+    margin-top: 16px;
   }
 
   .header__form {
@@ -72,7 +74,7 @@
   }
 
   .header__button {
-    width: 100px;
+    width: 103px;
     margin-right: 24px;
     align-self: center;
     margin-bottom: 0;
@@ -108,22 +110,22 @@
   .video-desc__paragraph {
     display: flex;
     @include tab-paragraph;
-    margin-right: 5%;
   }
 
   .video-desc__container {
     margin-top: 48px;
+    margin-right: 5%;
   }
 
   .video-desc__break-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    border-bottom-style: solid;
+    margin-bottom: 40px;
+    border-color: $icon-color;
   }
 
-  .video-desc__number {
-    margin-right: 24px;
-  }
   .comments__input {
     height: 60px;
     width: 61%;
@@ -177,17 +179,27 @@
     @include tab-paragraph;
   }
 
+  .list-videos__container {
+    margin-left: 3%;
+  }
+
+  .list-videos__img {
+    margin-left: 0;
+  }
+
   .upload-page__container {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     justify-content: flex-start;
-    margin-top: 40px;
     margin-bottom: 24px;
+    border-top-style: solid;
+    border-color: $icon-color;
+    height: 140px;
+    width: 90%;
   }
 
   .upload-page__button {
-    margin-right: 5%;
     margin-left: 48px;
     width: 160px;
     margin-bottom: 0px;
@@ -198,52 +210,69 @@
     align-self: center;
     margin: 0;
   }
+
+  .upload-page__header-container {
+    border-bottom-style: solid;
+    border-color: $icon-color;
+    margin-bottom: 40px;
+    margin-left: 5%;
+    width: 90%;
+  }
+
+  .upload-page__input-bottom {
+    margin-bottom: 40px;
+  }
+  
 }
 
 @media screen and (min-width: 1440px) {
-  .upload-page__video-container {
-    display: flex;
-    flex-direction: column;
-    margin-left: 9%;
-    margin-top: 40px;
-  }
-
   .upload-page__img-container {
     margin-left: 0;
   }
 
-  .upload-page__mid-container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-left: 2%;
-    margin-top: 40px;
-  }
-
-  .upload-page__desk-container {
-    display: flex;
-    border-top-style: solid;
-    border-bottom-style: solid;
-    border-color: $icon-color;
-  }
-
   .upload-page__input {
     width: 100%;
-    margin-right: 5%;
+    margin: 0;
+    height: 40px;
+    margin-bottom: 24px;
   }
 
   .upload-page__input-bottom {
     width: 100%;
-    margin-right: 5%;
     height: 94px;
+    margin: 0;
   }
 
   .upload-page__video-label {
     margin-left: 0%;
   }
 
-  .upload-page__header {
-    margin-left: 9%;
+  .upload-page__video-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    height: 183px;
+  }
+
+  .upload-page__mid-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .upload-page__upper-container{
+    width: 90%;
+    margin-left: 24px;
+    margin-right: 6%;
+  }
+
+  .upload-page__form {
+    width: 100%;
+  }
+
+  .upload-page__container{
+    margin-right: 5%;
+    margin-top: 40px;
+    width: 100%;
   }
 
   .comments__input {

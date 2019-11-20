@@ -1,19 +1,24 @@
 const express = require("express");
 const router = express.Router();
 const bodyParser = require("body-parser");
-const mainVideos = require("../models/mainVideos.json");
-const sideVideos = require("../models/sideVideos.json");
-//const fileName = "./server/models/sideVideos.json";
-//"Users/fawce/OneDrive/Documents/BrainstationProjects/benjamin-fawcett-brainflix/sprint-3/server/modelssideVideos.json";
-//let sideVideos = require(fileName);
-//const fileNameTwo = "\Users\fawce\OneDrive\Documents\BrainstationProjects\benjamin-fawcett-brainflix\sprint-3\server\models\mainVideos.json"
-// "/Users/fawce/OneDriveDocuments/BrainstationProjects/benjamin-fawcett-brainflix/sprint-3/server/model/mainVideo";
+// const mainVideos = require("../models/mainVideos.json");
+// const sideVideos = require("../models/sideVideos.json");
+const fileName =
+  "/Users/fawce/OneDrive/Documents/BrainstationProjects/benjamin-fawcett-brainflix/sprint-3/server/models/sideVideos.json";
+let sideVideos = require(fileName);
+const fileNameTwo =
+  "/Users/fawce/OneDrive/Documents/BrainstationProjects/benjamin-fawcett-brainflix/sprint-3/server/models/mainVideos.json";
 //"Users/fawce/OneDrive/Documents/BrainstationProjects/benjamin-fawcett-brainflix/sprint-3/server/modelsmainVideos.json";
-//let mainVideos = require(fileNameTwo);
+let mainVideos = require(fileNameTwo);
 // const logger = require("../middleware/logger");
 const app = express();
 const helper = require("../middleware/helper");
 const uuid = require("uuid");
+let sideVideosOne =
+  "/Users/fawce/OneDrive/Documents/BrainstationProjects/benjamin-fawcett-brainflix/sprint-3/server/models/sideVideos.json";
+let mainVideosOne =
+  "/Users/fawce/OneDrive/Documents/BrainstationProjects/benjamin-fawcett-brainflix/sprint-3/server/models/mainVideos";
+
 app.use(bodyParser.json());
 app.use(express.urlencoded({ extended: true }));
 
@@ -22,9 +27,11 @@ router.get("/", (req, res) => {
 });
 
 router.get("/:id", (req, res) => {
+  console.log(req.params.id)
   const found = mainVideos.some(video => video.id === req.params.id);
-
+console.log(found)
   if (found) {
+    console.log(mainVideos.filter(video => video.id === req.params.id))
     res.json(mainVideos.filter(video => video.id === req.params.id));
   } else {
     res
@@ -34,34 +41,34 @@ router.get("/:id", (req, res) => {
 });
 
 router.post("/", (req, res) => {
-  console.log();
   console.log(req.body);
-  const newSideVideos = {
-    image: req.body.image,
+  const id = uuid();
+  let newSideVideos = {
+    id,
     title: req.body.title,
     channel: "video channel",
-    id: id
+    image: req.body.image
   };
   let date = new Date();
-  const newMainVideos = {
-    image: req.body.image,
+  let newMainVideos = {
+    id,
     title: req.body.title,
     channel: "video channel",
+    image: req.body.image,    
     description: req.body.description,
-    id: id,
     views: "345,987",
     likes: "76,588",
     duration: "12:26",
-    video: "https://project-2-api.herokuapp.com/stream",
+    video: "",
     timestamp: date.getMilliseconds(),
     comments: []
   };
-  sideVideosData.push(newSideVideos);
-  mainVideosData.push(newMainVideos);
-  helper.writeJSONFile(mainVideos, mainVideosData);
-  helper.writeJSONFile(sideVideos, sideVideosData);
+  mainVideos.push(newMainVideos);
+  sideVideos.push(newSideVideos);
+  helper.writeJSONFile(fileNameTwo, mainVideos);
+  helper.writeJSONFile(fileName, sideVideos);
+res.json("test")
+  //res.redirect("/");
 });
-
-console.log(__filename);
 
 module.exports = router;

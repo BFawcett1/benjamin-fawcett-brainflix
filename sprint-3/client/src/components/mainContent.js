@@ -1,7 +1,7 @@
 import Header from "./Header";
-import Hero from "./VideoDesc";
+import VideoDesc from "./VideoDesc";
 import Comments from "./Comments";
-import Footer from "./ListVideos";
+import ListVideos from "./ListVideos";
 import axios from "axios";
 import React, { Component } from "react";
 // import { identifier } from "@babel/types";
@@ -17,7 +17,7 @@ export default class MainContent extends Component {
   }
   componentDidMount() {
     axios.get(`http://localhost:5000/videos`).then(response => {
-      console.log(response);
+      // console.log(response);
       this.setState({
         sideVideos: response.data
       });
@@ -31,9 +31,10 @@ export default class MainContent extends Component {
   }
   componentDidUpdate(prevProps, prevState) {
     // console.log(prevProps.match.params.id);
-    let id = this.props.match.params.id;
+   
     if (this.props.match.params.id !== prevProps.match.params.id) {
-      axios.get(`http://localhost:5000/videos/${id}`).then(res => {
+      console.log(this.props.match.params.id)
+      axios.get(`http://localhost:5000/videos/${this.props.match.params.id}`).then(res => {
         this.setState({
           mainVideo: res.data[0],
           videoId: res.data.id
@@ -46,11 +47,11 @@ export default class MainContent extends Component {
     return (
       <div>
         <>
-          <Hero data={this.state.mainVideo} />
+          <VideoDesc data={this.state.mainVideo} />
           {this.state.sideVideos.length > 0 ? (
             <div className="desktop-container">
-              <Comments commentProp={this.state} someInt={10} />
-              <Footer videoProp={this.state} someInt={9} />
+              <Comments commentProp={this.state}/>
+              <ListVideos videoProp={this.state}/>
             </div>
           ) : (
             <h1>Loading...</h1>

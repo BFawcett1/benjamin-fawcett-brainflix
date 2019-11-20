@@ -2,27 +2,29 @@ import React from "react";
 import ProfileIcon from "../assets/images/Mohan-muruge.jpg";
 
 export default function Comments(props) {
-  console.log(props.commentProp.mainVideo &&
-    props.commentProp.mainVideo)
-  const commentList = 
+  const commentList =
     props.commentProp.mainVideo.comments &&
     props.commentProp.mainVideo.comments.map(comment => {
-     let newDate = new Date(comment.timestamp);
-     let year = newDate.getFullYear();
-     let month = newDate.getMonth() + 1;
-     let day = newDate.getDate();
-     let fullDate = `${month}/${day}/${year}`;
+      let newDate = new Date(comment.timestamp);
+      let year = newDate.getFullYear();
+      let month = newDate.getMonth() + 1;
+      let day = newDate.getDate();
+      let fullDate = `${month}/${day}/${year}`;
 
       return (
-        <div className="comments">
-            <div className="comments__top-container">
-              <div className="comments__blankIcon"></div>
+        <div className="comments-mid" key={comment.id}>
+          <div clasName="comments__top-container">
+            <div className="comments__blankIcon"></div>
+          </div>
+            <div className="comments__mid-container">
+            <div className="comments__head-date-container">
               <h2 className="comments__subheader">{comment.name}</h2>
               <h5 className="comments__date">{fullDate}</h5>
             </div>
-        <div className="comments__text-container">
-          <h2 className="comments__text">{comment.comment}</h2>
-        </div>
+            <div>
+              <h2 className="comments__text">{comment.comment}</h2>
+            </div>
+            </div>
         </div>
       );
     });
@@ -33,11 +35,10 @@ export default function Comments(props) {
       <div className="comments__container-bottom">
         <img className="comments__profile" src={ProfileIcon} alt="profile" />
         <form className="comments__form">
-          <label></label>
           <input
             className="comments__input"
             type="text"
-            value="  That was easily the most spectacular BMX moment ever."
+            placeholder="That was easily the most spectacular BMX moment ever."
           ></input>
           <button className="comments__button">COMMENT</button>
         </form>
